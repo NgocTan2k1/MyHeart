@@ -1,3 +1,4 @@
+document.getElementById("item-img").innerHTML = `<img class="item" onclick="clickChangeImgMyLove()" src="./img/0.jpg" alt="">`;
 var array = [];
 var numberRandom;
 
@@ -8,7 +9,7 @@ function clickChangeImgMyLove() {
     // check
     // console.log("length array: ", array.length);
 
-    numberRandom = Math.floor(Math.random() * 26);
+    numberRandom = Math.floor(Math.random() * 25);
     // check
     // console.log("numberRandom: ", numberRandom);
     
@@ -24,9 +25,9 @@ function clickChangeImgMyLove() {
             break;
         }
     }
-
-    var imgElement = document.getElementsByClassName("item");
-    imgElement.src = `./img/${numberRandom}.jpg`;
-    console.log(imgElement);
+    console.log(numberRandom);
+    document.getElementById("item-img").innerHTML = `<img class="item" onclick="clickChangeImgMyLove()" src="./img/${numberRandom}.jpg" alt="">`;
+    console.log(document.getElementById("item-img"));
 }
+
 
