@@ -14,9 +14,7 @@
 .list-img {
     display: block;
     margin: auto;
-    margin-top: 60px;
-    width: 300px;
-    height: 360px;
+    width: 360px;
 
 }
 
@@ -31,9 +29,9 @@
     width: 100%;
 }
 
-.btn-click {
+#btn-click {
     display: flex;
-    margin-top: 24px;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -41,6 +39,9 @@
     margin: 0 8px;
     padding: 6px 12px;
     border-radius: 2px;
+    display: block;
+    align-self: center;
+    width: 50%;
 }
 
 .click:hover {
@@ -48,6 +49,27 @@
     cursor: pointer;
 }
 
-.heart {
-    color: red;
+.text {
+    font-size: 24px;
+    margin: 12px 0;
+    text-align: center;
+}
+
+/* PC */
+@media screen and (min-width: 1024px){
+    .list-img {
+        width: 360px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    
+}
+
+/* mobile */
+@media screen and (min-width: 240px) and (max-width: 720px) {
+    .list-img {
+        width: 100%;
+    }
 }
