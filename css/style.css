@@ -1,0 +1,42 @@
+.app {
+    display: block;
+    background-color: pink;
+    margin: auto;
+}
+
+.list-img {
+    background-color: pink;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    width: 360px;
+
+}
+
+.item-img {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.btn-click {
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.btn-next {
+    margin: 0 8px;
+    padding: 6px 12px;
+    border-radius: 50px solid #ccc;
+}
+
+.btn-back {
+    margin: 0 8px;
+    padding: 6px 12px;
+}
