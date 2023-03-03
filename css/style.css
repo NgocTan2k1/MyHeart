@@ -60,11 +60,16 @@
     .list-img {
         width: 360px;
     }
+    .click {
+        width: 10%;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1024px) {
-    
+    .click {
+        width: 10%;
+    }
 }
 
 /* mobile */
