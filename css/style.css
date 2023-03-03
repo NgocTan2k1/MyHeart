@@ -1,3 +1,10 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
 .app {
     display: block;
     background-color: pink;
@@ -30,13 +37,13 @@
     justify-content: center;
 }
 
-.btn-next {
+.click {
     margin: 0 8px;
     padding: 6px 12px;
-    border-radius: 50px solid #ccc;
+    border-radius: 2px;
 }
 
-.btn-back {
-    margin: 0 8px;
-    padding: 6px 12px;
+.click:hover {
+    background-color: #ccc;
+    cursor: pointer;
 }
