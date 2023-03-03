@@ -1,5 +1,8 @@
 var elementImg = document.getElementById("item-img")
-elementImg.innerHTML = `<img class="item" onclick="clickChangeImgMyLove()" src="./img/0.jpg" alt="">`;
+elementImg.innerHTML = `
+    <img class="item" onclick="clickChangeImgMyLove()" src="./img/0.jpg" alt="">
+    <p class="text">Click vô ảnh mà xem cái bạn xinh xinh này tiếp nè ^^</p>
+    `;
 
 var elementClick = document.getElementById("btn-click");
 
