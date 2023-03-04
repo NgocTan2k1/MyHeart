@@ -33,13 +33,15 @@ function clickChangeImgMyLove() {
             <p class="text">Đã bảo với bé là hết rồi mà :v</p>
             
             `;
-
-            elementClick.innerHTML = `
-            <button onclick="clickToReset()" class="click">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-            <p class="text">Click zô trái tym tui mà xem típ nè</p>
-            `;
+            setTimeout(() => {
+                elementClick.innerHTML = `
+                    <button onclick="clickToReset()" class="click">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <p class="text">Click zô trái tym tui mà xem típ nè</p>
+                `;
+            }, 3000);
+            
         } else {
             // check
             // console.log("length array: ", array.length);
