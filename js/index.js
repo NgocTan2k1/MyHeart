@@ -4,8 +4,8 @@ elementImg.innerHTML = `
     <p class="text">Click vô ảnh mà xem cái bạn xinh xinh này tiếp nè ^^</p>
 `;
 
-var elementAudio = document.getElementById("audioMusic");
-elementAudio.play();
+// var elementAudio = document.getElementById("audioMusic");
+// elementAudio.play();
 
 var elementClick = document.getElementById("btn-click");
 
