@@ -65,8 +65,8 @@ function clickChangeImgMyLove() {
                     break;
                 }
             }
-            console.log(numberRandom);
-            console.log(array)
+            // console.log(numberRandom);
+            // console.log(array)
             elementImg.innerHTML = `<img class="item" onclick="clickChangeImgMyLove()" src="./img/${numberRandom}.jpg" alt="">`;
             
             // console.log(document.getElementById("item-img"));
