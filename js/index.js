@@ -1,23 +1,35 @@
 var elementImg = document.getElementById("item-img");
 elementImg.innerHTML = `
-    <img class="item" onclick="clickChangeImgMyLove()" src="./img/0.jpg" alt="">
+    <img class="item" onclick="clickStart()" src="./img/0.jpg" alt="">
     <p class="text">Click vô ảnh mà xem cái bạn xinh xinh này tiếp nè ^^</p>
 `;
 
-// var elementAudio = document.getElementById("audioMusic");
-// elementAudio.play();
+
 
 var elementClick = document.getElementById("btn-click");
-
+var elementAudio = document.getElementById("audioMusic");
 
 var array = [];
 var numberRandom;
 
+function clickStart() {
+    if(!elementAudio.isPlaying) {
+        clickOnAudio();
+    }
+    clickChangeImgMyLove();
+}
+
 function clickToReset() {
-    elementImg.innerHTML = `<img class="item" onclick="clickChangeImgMyLove()" src="./img/0.jpg" alt="">`;
+    elementImg.innerHTML = `<img class="item" onclick="clickStart()" src="./img/0.jpg" alt="">`;
     elementClick.innerHTML = ``;
     array = [];
 }
+
+function clickOnAudio() {
+    elementAudio.play();
+}
+
+
 
 function clickChangeImgMyLove() {
     if(array.length == 23) {
