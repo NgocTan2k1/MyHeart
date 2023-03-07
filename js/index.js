@@ -4,8 +4,6 @@ elementImg.innerHTML = `
     <p class="text">Click vô ảnh mà xem cái bạn xinh xinh này tiếp nè ^^</p>
 `;
 
-
-
 var elementClick = document.getElementById("btn-click");
 var elementAudio = document.getElementById("audioMusic");
 
@@ -29,22 +27,20 @@ function clickOnAudio() {
     elementAudio.play();
 }
 
-
-
 function clickChangeImgMyLove() {
-    if(array.length == 23) {
+    if(array.length == 24) {
         elementImg.innerHTML = `
-            <img class="item" src="./img/24.jpg" onclick="clickChangeImgMyLove()" alt="">
+            <img class="item" src="./img/25.jpg" onclick="clickChangeImgMyLove()" alt="">
             <p class="text">Hết rồi bé ơi, còn đâu nữa mà coi!!!</p>
         `;
-        if(array.length >= 23) {
+        if(array.length >= 24) {
             array.push(numberRandom);
         }
 
     } else {
-        if (array.length == 24) {
+        if (array.length == 25) {
             elementImg.innerHTML = `
-            <img class="item" onclick="clickChangeImgMyLove()" src="./img/25.jpg" alt="">
+            <img class="item" onclick="clickChangeImgMyLove()" src="./img/26.jpg" alt="">
             <p class="text">Đã bảo với bé là hết rồi mà :v</p>
             
             `;
@@ -61,14 +57,14 @@ function clickChangeImgMyLove() {
             // check
             // console.log("length array: ", array.length);
     
-            numberRandom = Math.floor(Math.random() * 23) + 1;
+            numberRandom = Math.floor(Math.random() * 24) + 1;
             // check
             // console.log("numberRandom: ", numberRandom);
             
     
             while(true) {
                 if(array.find(e => e == numberRandom)) {
-                    numberRandom = Math.floor(Math.random() * 23) + 1;
+                    numberRandom = Math.floor(Math.random() * 24) + 1;
                     // check
                     // console.log("numberRandom: ", numberRandom);
                     // console.log("length array: ", array.length);
