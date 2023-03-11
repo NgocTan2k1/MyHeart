@@ -28,19 +28,19 @@ function clickOnAudio() {
 }
 
 function clickChangeImgMyLove() {
-    if(array.length == 27) {
+    if(array.length == 28) {
         elementImg.innerHTML = `
-            <img class="item" src="./img/28.jpg" onclick="clickChangeImgMyLove()" alt="">
+            <img class="item" src="./img/29.jpg" onclick="clickChangeImgMyLove()" alt="">
             <p class="text">Hết rồi bé ơi, còn đâu nữa mà coi!!!</p>
         `;
-        if(array.length >= 27) {
+        if(array.length >= 28) {
             array.push(numberRandom);
         }
 
     } else {
-        if (array.length == 28) {
+        if (array.length == 29) {
             elementImg.innerHTML = `
-            <img class="item" onclick="clickChangeImgMyLove()" src="./img/29.jpg" alt="">
+            <img class="item" onclick="clickChangeImgMyLove()" src="./img/30.jpg" alt="">
             <p class="text">Đã bảo với bé là hết rồi mà :v</p>
             
             `;
@@ -57,7 +57,7 @@ function clickChangeImgMyLove() {
             // check
             // console.log("length array: ", array.length);
     
-            numberRandom = Math.floor(Math.random() * 24) + 1;
+            numberRandom = Math.floor(Math.random() * 28) + 1;
             
             // check
             // console.log("numberRandom: ", numberRandom);
