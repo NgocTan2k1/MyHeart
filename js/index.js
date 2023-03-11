@@ -30,7 +30,7 @@ function clickOnAudio() {
 function clickChangeImgMyLove() {
     if(array.length == 27) {
         elementImg.innerHTML = `
-            <img class="item" src="./img/25.jpg" onclick="clickChangeImgMyLove()" alt="">
+            <img class="item" src="./img/28.jpg" onclick="clickChangeImgMyLove()" alt="">
             <p class="text">Hết rồi bé ơi, còn đâu nữa mà coi!!!</p>
         `;
         if(array.length >= 27) {
