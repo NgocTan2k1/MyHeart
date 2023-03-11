@@ -40,7 +40,7 @@ function clickChangeImgMyLove() {
     } else {
         if (array.length == 28) {
             elementImg.innerHTML = `
-            <img class="item" onclick="clickChangeImgMyLove()" src="./img/26.jpg" alt="">
+            <img class="item" onclick="clickChangeImgMyLove()" src="./img/29.jpg" alt="">
             <p class="text">Đã bảo với bé là hết rồi mà :v</p>
             
             `;
@@ -65,7 +65,7 @@ function clickChangeImgMyLove() {
     
             while(true) {
                 if(array.find(e => e == numberRandom)) {
-                    numberRandom = Math.floor(Math.random() * 24) + 1;
+                    numberRandom = Math.floor(Math.random() * 28) + 1;
                     // check
                     // console.log("numberRandom: ", numberRandom);
                     // console.log("length array: ", array.length);
