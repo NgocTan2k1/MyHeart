@@ -28,19 +28,19 @@ function clickOnAudio() {
 }
 
 function clickChangeImgMyLove() {
-    if(array.length ==31) {
+    if(array.length == 32) {
         elementImg.innerHTML = `
-            <img class="item" src="./img/32.jpg" onclick="clickChangeImgMyLove()" alt="">
+            <img class="item" src="./img/33.jpg" onclick="clickChangeImgMyLove()" alt="">
             <p class="text">Hết rồi bé ơi, còn đâu nữa mà coi!!!</p>
         `;
-        if(array.length >=31) {
+        if(array.length >= 32) {
             array.push(numberRandom);
         }
 
     } else {
-        if (array.length == 32) {
+        if (array.length == 33) {
             elementImg.innerHTML = `
-            <img class="item" onclick="clickChangeImgMyLove()" src="./img/33.jpg" alt="">
+            <img class="item" onclick="clickChangeImgMyLove()" src="./img/34.jpg" alt="">
             <p class="text">Đã bảo với bé là hết rồi mà :v</p>
             
             `;
@@ -57,7 +57,7 @@ function clickChangeImgMyLove() {
             // check
             // console.log("length array: ", array.length);
     
-            numberRandom = Math.floor(Math.random() *31) + 1;
+            numberRandom = Math.floor(Math.random() *32) + 1;
             
             // check
             // console.log("numberRandom: ", numberRandom);
@@ -65,7 +65,7 @@ function clickChangeImgMyLove() {
     
             while(true) {
                 if(array.find(e => e == numberRandom)) {
-                    numberRandom = Math.floor(Math.random() *31) + 1;
+                    numberRandom = Math.floor(Math.random() *32) + 1;
                     // check
                     // console.log("numberRandom: ", numberRandom);
                     // console.log("length array: ", array.length);
