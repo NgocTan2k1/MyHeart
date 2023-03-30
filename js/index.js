@@ -57,7 +57,7 @@ function clickChangeImgMyLove() {
             // check
             // console.log("length array: ", array.length);
     
-            numberRandom = Math.floor(Math.random() *32) + 1;
+            numberRandom = Math.floor(Math.random() * 32) + 1;
             
             // check
             // console.log("numberRandom: ", numberRandom);
@@ -65,7 +65,7 @@ function clickChangeImgMyLove() {
     
             while(true) {
                 if(array.find(e => e == numberRandom)) {
-                    numberRandom = Math.floor(Math.random() *32) + 1;
+                    numberRandom = Math.floor(Math.random() * 32) + 1;
                     // check
                     // console.log("numberRandom: ", numberRandom);
                     // console.log("length array: ", array.length);
